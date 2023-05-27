@@ -9,4 +9,7 @@ public interface IHotelService {
 
     public void insert (Hotel hotel);
     List<Hotel> list();
+
+    public void delete (int idAuthor);
+public Hotel listId(int idHotel);
 }
