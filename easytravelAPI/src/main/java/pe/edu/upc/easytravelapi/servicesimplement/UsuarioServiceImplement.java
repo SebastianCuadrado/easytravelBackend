@@ -1,4 +1,4 @@
-package pe.edu.upc.easytravelapi.servicesimplements;
+package pe.edu.upc.easytravelapi.servicesimplement;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
