@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IHotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IHotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/HotelServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/HotelServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/HotelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/HotelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IHotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IHotelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/HotelServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/HotelServiceImplement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,14 +82,13 @@
       <workItem from="1685141756068" duration="178000" />
       <workItem from="1685142102140" duration="5802000" />
       <workItem from="1685149980928" duration="4549000" />
-<<<<<<< Updated upstream
-=======
+
       <workItem from="1685307165793" duration="1846000" />
       <workItem from="1685420801032" duration="24000" />
       <workItem from="1685424175916" duration="98000" />
       <workItem from="1686107316883" duration="635000" />
       <workItem from="1686157653918" duration="28000" />
->>>>>>> Stashed changes
+
     </task>
     <servers />
   </component>
