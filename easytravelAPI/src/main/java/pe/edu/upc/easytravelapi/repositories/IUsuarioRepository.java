@@ -7,5 +7,6 @@ import pe.edu.upc.easytravelapi.entities.Usuarios;
 
 @Repository
 public interface IUsuarioRepository extends JpaRepository<Usuarios, Integer> {
+
 }
 
