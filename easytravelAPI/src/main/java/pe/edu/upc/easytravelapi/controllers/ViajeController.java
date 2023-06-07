@@ -1,0 +1,52 @@
+package pe.edu.upc.easytravelapi.controllers;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import pe.edu.upc.easytravelapi.dtos.ViajeDTO;
+import pe.edu.upc.easytravelapi.entities.Viaje;
+import pe.edu.upc.easytravelapi.services.IViajeService;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+@RestController
+@RequestMapping("/viaje")
+public class ViajeController {
+    @Autowired
+    private IViajeService vS;
+
+    @PostMapping
+    public void insert(@RequestBody ViajeDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Viaje v = m.map(dto, Viaje.class);
+        vS.insert(v);
+    }
+
+    @GetMapping
+    public List<ViajeDTO> list() {
+        return vS.list().stream().map(x -> {
+            ModelMapper m = new ModelMapper();
+            return m.map(x, ViajeDTO.class);
+        }).collect(Collectors.toList());
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Integer id) {
+        vS.delete(id);
+    }
+
+    @GetMapping("/{id}")
+    public ViajeDTO listId(@PathVariable("id") Integer id) {
+        ModelMapper m = new ModelMapper();
+        ViajeDTO dto = m.map(vS.listId(id), ViajeDTO.class);
+        return dto;
+    }
+
+    @PutMapping
+    public void goUpdate(@RequestBody ViajeDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Viaje v = m.map(dto, Viaje.class);
+        vS.insert(v);
+    }
+}
