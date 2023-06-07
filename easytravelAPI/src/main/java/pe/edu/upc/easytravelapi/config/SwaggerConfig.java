@@ -1,5 +1,4 @@
 package pe.edu.upc.easytravelapi.config;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -17,7 +16,7 @@ public class SwaggerConfig {
     public Docket apiDocket(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("pe.edu.upc.easytravelapi.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("pe.edu.upc.easytravelAPI.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }
