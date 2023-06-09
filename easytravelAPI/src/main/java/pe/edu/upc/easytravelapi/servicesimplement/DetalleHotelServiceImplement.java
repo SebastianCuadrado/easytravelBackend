@@ -13,11 +13,12 @@ public class DetalleHotelServiceImplement implements IDetalleHotelService {
     private IDetalleHotelRepository dhR;
     @Override
     public void insertar(DetalleHotel detalleHotel) {
-
+        dhR.save(detalleHotel);
     }
 
     @Override
-    public void delete(int idAuthor) {
+    public void delete(int idDetalle) {
+        dhR.deleteById(idDetalle);
 
     }
 }
