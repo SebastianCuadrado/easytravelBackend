@@ -11,7 +11,7 @@ public class DetalleHotel
     private int idDetalle;
     @Column(name = "tipoHabitacion",length = 20,nullable = false)
 private String tipoHabitacion;
-    @Column(name = "cantidad",nullable = false)
+    @Column(name = "cantidadNoches",nullable = false)
 private int cantidadNoches;
 
     @ManyToOne
