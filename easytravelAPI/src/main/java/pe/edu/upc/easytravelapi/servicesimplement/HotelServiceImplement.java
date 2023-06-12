@@ -25,13 +25,13 @@ public class HotelServiceImplement implements IHotelService
     }
 
     @Override
-    public void delete(int idHotel) {
-        hR.deleteById(idHotel);
+    public void delete(int idHotels) {
+        hR.deleteById(idHotels);
 
     }
 
     @Override
-    public Hotel listId(int idHotel) {
-        return hR.findById(idHotel).orElse(new Hotel());
+    public Hotel listId(int idHotels) {
+        return hR.findById(idHotels).orElse(new Hotel());
     }
 }

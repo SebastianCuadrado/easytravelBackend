@@ -2,6 +2,7 @@ package pe.edu.upc.easytravelapi.servicesimplement;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upc.easytravelapi.entities.Hotel;
 import pe.edu.upc.easytravelapi.entities.Servicios;
 import pe.edu.upc.easytravelapi.repositories.IServiciosRepository;
 import pe.edu.upc.easytravelapi.services.IServiciosService;
@@ -25,5 +26,10 @@ public class ServiciosServiceImplement implements IServiciosService {
     @Override
     public List<Servicios> listar() {
         return sR.findAll();
+    }
+
+    @Override
+    public Servicios listId(int idServicio) {
+        return sR.findById(idServicio).orElse(new Servicios());
     }
 }
