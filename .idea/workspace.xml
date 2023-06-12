@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/NotificacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/NotificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Notificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/INotificacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/INotificacionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_3_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/EasytravelApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/EasytravelApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/EasytravelApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/EasytravelApiApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,31 +61,34 @@
     </option>
   </component>
   <component name="ProjectId" id="2QGIAANGG2MP85AUwwkmMVD3tDY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/UNIVERSIDAD/5TO CICLO/ARQUI WEB/semana11/demoAuthor_CORS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;af0957de628e7d3a723c29e189568604&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ASUS/OneDrive/UNIVERSIDAD/5TO CICLO/ARQUI WEB/semana11/demoAuthor_CORS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "af0957de628e7d3a723c29e189568604",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pe.edu.upc.easytravelapi.servicesimplement" />
@@ -92,6 +123,8 @@
       <workItem from="1685424175916" duration="98000" />
       <workItem from="1686107316883" duration="635000" />
       <workItem from="1686157653918" duration="28000" />
+      <workItem from="1686549643549" duration="127000" />
+      <workItem from="1686549777419" duration="3758000" />
     </task>
     <servers />
   </component>
