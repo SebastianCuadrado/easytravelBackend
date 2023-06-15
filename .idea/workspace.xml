@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/InteresesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/InteresesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/NotificacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/NotificacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IInteresesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IInteresesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/INotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/INotificacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/InteresesServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/InteresesServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +101,8 @@
       <workItem from="1686702112934" duration="1270000" />
       <workItem from="1686709601188" duration="584000" />
       <workItem from="1686717799700" duration="609000" />
+      <workItem from="1686779235283" duration="3673000" />
+      <workItem from="1686858223554" duration="753000" />
     </task>
     <servers />
   </component>
