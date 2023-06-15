@@ -25,4 +25,14 @@ public class NotificacionServiceImplement implements INotificacionService {
     public List<Notificacion> findInteresID(Integer id) {
         return nR.findInteresID(id);
     }
+
+    @Override
+    public void delete(int id) {
+        nR.deleteById(id);
+    }
+
+    @Override
+    public Notificacion listId(int id) {
+        return nR.findById(id).orElse(new Notificacion());
+    }
 }
