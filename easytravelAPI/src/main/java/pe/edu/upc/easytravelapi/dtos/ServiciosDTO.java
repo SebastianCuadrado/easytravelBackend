@@ -13,6 +13,7 @@ public class ServiciosDTO {
     private String nombre;
 
     private String descripcion;
+    private Hotel hotel;
 
     public int getIdServicio() {
         return idServicio;
@@ -36,5 +37,13 @@ public class ServiciosDTO {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
     }
 }
