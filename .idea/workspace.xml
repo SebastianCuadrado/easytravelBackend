@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/ServiciosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/ServiciosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/ServiciosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/ServiciosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +98,11 @@
       <workItem from="1686107316883" duration="635000" />
       <workItem from="1686157653918" duration="28000" />
       <workItem from="1686522327386" duration="4128000" />
-      <workItem from="1686689461373" duration="6166000" />
-      <workItem from="1686701650222" duration="4158000" />
+      <workItem from="1686702112934" duration="1270000" />
+      <workItem from="1686709601188" duration="584000" />
+      <workItem from="1686717799700" duration="609000" />
+      <workItem from="1686779235283" duration="3673000" />
+      <workItem from="1686858223554" duration="753000" />
     </task>
     <servers />
   </component>
