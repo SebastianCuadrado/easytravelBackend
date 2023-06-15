@@ -5,6 +5,7 @@ public class PlaceDTO {
     private String namePlace;
     private String descriptionPlace;
     private String country;
+    private String image;
 
     public int getId() {
         return id;
@@ -36,5 +37,13 @@ public class PlaceDTO {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

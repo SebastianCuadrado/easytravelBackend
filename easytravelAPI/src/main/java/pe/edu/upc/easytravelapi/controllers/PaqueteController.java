@@ -35,4 +35,16 @@ public class PaqueteController {
             return m.map(x, PaqueteDTO.class);
         }).collect(Collectors.toList());
     }
+    @GetMapping("/{id}")
+    public PaqueteDTO listId(@PathVariable("id") Integer id) {
+        ModelMapper m = new ModelMapper();
+        PaqueteDTO dto = m.map(pS.listId(id), PaqueteDTO.class);
+        return dto;
+    }
+    @PutMapping
+    public void goUpdate(@RequestBody PaqueteDTO dto) {
+        ModelMapper m = new ModelMapper();
+        Paquete p = m.map(dto, Paquete.class);
+        pS.insert(p);
+    }
 }
