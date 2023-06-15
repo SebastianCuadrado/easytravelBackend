@@ -10,15 +10,17 @@ public class Place {
     private int id;
     @Column(name="namePlace", length = 20, nullable = false)
     private String namePlace;
-    @Column(name="descriptionPlace", length = 100, nullable = false)
+    @Column(name="descriptionPlace", length = 200, nullable = false)
     private String descriptionPlace;
     @Column(name="country", length = 20, nullable = false)
     private String country;
+    @Column(name="image", nullable = false)
+    private String image;
 
     public Place() {
     }
 
-    public Place(int id, String namePlace, String descriptionPlace, String country) {
+    public Place(int id, String namePlace, String descriptionPlace, String country, String image) {
         this.id = id;
         this.namePlace = namePlace;
         this.descriptionPlace = descriptionPlace;
@@ -55,5 +57,13 @@ public class Place {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

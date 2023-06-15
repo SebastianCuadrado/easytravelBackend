@@ -8,4 +8,7 @@ public interface IPaqueteService {
     public void insert(Paquete paquete);
     List<Paquete> list();
     List<Paquete> findPaqueteByPrecioGreaterThan(float precio);
+    public void delete(int idPaquete);
+    public Paquete listId(int idPaquete);
+
 }

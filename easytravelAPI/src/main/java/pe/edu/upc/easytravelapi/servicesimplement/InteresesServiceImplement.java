@@ -27,4 +27,14 @@ public class InteresesServiceImplement implements IInteresesService {
     public List<Intereses> BuscarInteresPorIDUsuario(Integer id) {
         return iR.findInteresByUserID(id);
     }
+
+    @Override
+    public void delete(int id) {
+        iR.deleteById(id);
+    }
+
+    @Override
+    public Intereses listId(int id) {
+        return iR.findById(id).orElse(new Intereses());
+    }
 }

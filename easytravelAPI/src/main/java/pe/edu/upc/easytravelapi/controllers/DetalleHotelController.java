@@ -21,14 +21,14 @@ public class DetalleHotelController {
     private IDetalleHotelService dhS;
 
     @PostMapping
-    public void registrar (@RequestBody ServiciosDTO dto){
+    public void registrar (@RequestBody DetalleHotelDTO dto){
         ModelMapper m = new ModelMapper();
         DetalleHotel dh=m.map(dto, DetalleHotel.class);
         dhS.insertar(dh);
     }
 
     @PutMapping
-    public void modificar (@RequestBody ServiciosDTO dto) {
+    public void modificar (@RequestBody DetalleHotelDTO dto) {
         ModelMapper m= new ModelMapper();
         DetalleHotel dh=m.map(dto, DetalleHotel.class);
         dhS.insertar(dh);

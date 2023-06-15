@@ -8,4 +8,6 @@ public interface INotificacionService {
     public void insertar(Notificacion notificacion);
     List<Notificacion> listar();
     List<Notificacion> findInteresID(Integer id);
+    public void delete(int id);
+    public Notificacion listId(int id);
 }
