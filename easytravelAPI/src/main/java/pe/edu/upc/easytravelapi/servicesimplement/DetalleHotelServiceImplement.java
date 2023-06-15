@@ -20,12 +20,12 @@ public class DetalleHotelServiceImplement implements IDetalleHotelService {
 
     @Override
     public List<DetalleHotel> list() {
-        return null;
+        return dhR.findAll();
     }
 
     @Override
     public DetalleHotel listId(int idDetalle) {
-        return null;
+        return dhR.findById(idDetalle).orElse(new DetalleHotel());
     }
 
     @Override
