@@ -45,4 +45,13 @@ public class ComentariosHotelController {
         ComentariosHotel ch=m.map(dto, ComentariosHotel.class);
         chS.insert(ch);
     }
+    @GetMapping("/hotels/{idHotels}")
+    public List<ComentariosHotelDTO> findByHotelId(@PathVariable("idHotels") Integer idHotels) {
+        return chS.findByHotelsIdHotels(idHotels).stream()
+                .map(x -> {
+                    ModelMapper m = new ModelMapper();
+                    return m.map(x, ComentariosHotelDTO.class);
+                })
+                .collect(Collectors.toList());
+    }
 }
