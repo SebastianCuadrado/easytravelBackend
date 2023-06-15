@@ -6,6 +6,7 @@ public class EmpresaTransporteDTO {
     private String ruc;
     private String direccion;
     private String contacto;
+    private String logo;
 
     public int getIdEmpresa() {
         return idEmpresa;
@@ -45,5 +46,13 @@ public class EmpresaTransporteDTO {
 
     public void setContacto(String contacto) {
         this.contacto = contacto;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
     }
 }
