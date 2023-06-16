@@ -10,6 +10,6 @@ import org.springframework.data.repository.query.Param;
 
 @Repository
 public interface IComentariosHotelRepository extends JpaRepository<ComentariosHotel,Integer> {
-    @Query("SELECT c FROM ComentariosHotel c WHERE c.hotel.idHotels = :hotelId")
+    @Query("SELECT c FROM ComentariosHotel c WHERE c.hotels.idHotels = :hotelId")
     List<ComentariosHotel> findByHotelsIdHotels(@Param("hotelId") int hotelId);
 }

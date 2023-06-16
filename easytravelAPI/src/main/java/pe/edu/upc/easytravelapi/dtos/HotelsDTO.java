@@ -1,8 +1,6 @@
 package pe.edu.upc.easytravelapi.dtos;
 
-import javax.persistence.Column;
-
-public class HotelDTO {
+public class HotelsDTO {
 
     private int idHotels;
     private String nombre;

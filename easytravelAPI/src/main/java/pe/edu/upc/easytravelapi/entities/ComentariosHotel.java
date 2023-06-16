@@ -15,7 +15,7 @@ public class ComentariosHotel {
     private String comentario;
     @ManyToOne
     @JoinColumn(name = "idHotels")
-    private Hotel hotel;
+    private Hotels hotels;
     @OneToOne
     @JoinColumn(name = "idUsuario")
     private Usuarios usuario;
@@ -23,11 +23,11 @@ public class ComentariosHotel {
     public ComentariosHotel() {
     }
 
-    public ComentariosHotel(int idComentariosHotel, double valoracion, String comentario, Hotel hotel, Usuarios usuario) {
+    public ComentariosHotel(int idComentariosHotel, double valoracion, String comentario, Hotels hotels, Usuarios usuario) {
         this.idComentariosHotel = idComentariosHotel;
         this.valoracion = valoracion;
         this.comentario = comentario;
-        this.hotel = hotel;
+        this.hotels = hotels;
         this.usuario = usuario;
     }
 
@@ -55,12 +55,12 @@ public class ComentariosHotel {
         this.comentario = comentario;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotels(Hotels hotels) {
+        this.hotels = hotels;
     }
 
     public Usuarios getUsuario() {
