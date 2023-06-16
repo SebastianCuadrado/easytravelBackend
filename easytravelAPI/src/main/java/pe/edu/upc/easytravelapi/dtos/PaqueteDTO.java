@@ -1,7 +1,7 @@
 package pe.edu.upc.easytravelapi.dtos;
 
 import pe.edu.upc.easytravelapi.entities.DetalleHotel;
-import pe.edu.upc.easytravelapi.entities.Hotel;
+import pe.edu.upc.easytravelapi.entities.Hotels;
 import pe.edu.upc.easytravelapi.entities.Place;
 import pe.edu.upc.easytravelapi.entities.Viaje;
 
@@ -20,7 +20,7 @@ public class PaqueteDTO {
     private float ahorro;
     private String tipoHabitacion;
     private int cantidadNoches;
-    private Hotel hotel;
+    private Hotels hotels;
     private LocalDate checkin;
     private LocalDate checkout;
 
@@ -88,12 +88,12 @@ public class PaqueteDTO {
         this.cantidadNoches = cantidadNoches;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotels(Hotels hotels) {
+        this.hotels = hotels;
     }
 
     public LocalDate getCheckin() {

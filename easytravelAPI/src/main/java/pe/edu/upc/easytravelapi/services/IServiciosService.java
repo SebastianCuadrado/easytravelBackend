@@ -1,6 +1,6 @@
 package pe.edu.upc.easytravelapi.services;
 
-import pe.edu.upc.easytravelapi.entities.Hotel;
+import pe.edu.upc.easytravelapi.entities.Hotels;
 import pe.edu.upc.easytravelapi.entities.Servicios;
 
 import java.util.List;

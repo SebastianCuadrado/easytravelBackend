@@ -3,8 +3,8 @@ package pe.edu.upc.easytravelapi.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Hotel")
-public class Hotel {
+@Table(name = "Hotels")
+public class Hotels {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,10 +20,10 @@ public class Hotel {
     @Column(name = "estrellas",length = 1,nullable = false)
     private int estrellas;
 
-    public Hotel() {
+    public Hotels() {
     }
 
-    public Hotel(int idHotels, String nombre, String precio_noche, String ciudad, String valoracion_promedio, int estrellas) {
+    public Hotels(int idHotels, String nombre, String precio_noche, String ciudad, String valoracion_promedio, int estrellas) {
         this.idHotels = idHotels;
         this.nombre = nombre;
         this.precio_noche = precio_noche;

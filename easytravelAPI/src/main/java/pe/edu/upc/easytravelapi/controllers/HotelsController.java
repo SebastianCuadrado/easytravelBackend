@@ -2,31 +2,31 @@ package pe.edu.upc.easytravelapi.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.upc.easytravelapi.dtos.HotelDTO;
-import pe.edu.upc.easytravelapi.entities.Hotel;
-import pe.edu.upc.easytravelapi.services.IHotelService;
+import pe.edu.upc.easytravelapi.dtos.HotelsDTO;
+import pe.edu.upc.easytravelapi.entities.Hotels;
+import pe.edu.upc.easytravelapi.services.IHotelsService;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/hotels")
-public class HotelController {
+public class HotelsController {
     @Autowired
-    private IHotelService hS;
+    private IHotelsService hS;
 
     @PostMapping
-    public void insert(@RequestBody HotelDTO dto){
+    public void insert(@RequestBody HotelsDTO dto){
         ModelMapper m = new ModelMapper();
-        Hotel h=m.map(dto, Hotel.class);
+        Hotels h=m.map(dto, Hotels.class);
         hS.insert(h);
     }
 
     @GetMapping
-    public List<HotelDTO> list(){
+    public List<HotelsDTO> list(){
     return hS.list().stream().map(x->{
     ModelMapper m= new ModelMapper();
-    return m.map(x,HotelDTO.class);
+    return m.map(x,HotelsDTO.class);
     }).collect(Collectors.toList());
     }
 
@@ -36,16 +36,16 @@ hS.delete(id);
     }
 
     @GetMapping("/{id}")
-    public HotelDTO listId(@PathVariable("id")Integer id){
+    public HotelsDTO listId(@PathVariable("id")Integer id){
         ModelMapper m= new ModelMapper();
-        HotelDTO dto=m.map(hS.listId(id),HotelDTO.class);
+        HotelsDTO dto=m.map(hS.listId(id),HotelsDTO.class);
         return dto;
     }
 
     @PutMapping
-    public void goUpdate(@RequestBody HotelDTO dto){
+    public void goUpdate(@RequestBody HotelsDTO dto){
         ModelMapper m = new ModelMapper();
-        Hotel h=m.map(dto, Hotel.class);
+        Hotels h=m.map(dto, Hotels.class);
         hS.insert(h);
     }
 }
