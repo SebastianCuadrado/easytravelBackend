@@ -24,8 +24,8 @@ public class Paquete {
     @Column(name = "cantidadNoches",nullable = false)
     private int cantidadNoches;
     @ManyToOne
-    @JoinColumn(name = "idHotel")
-    private Hotel hotel;
+    @JoinColumn(name = "idHotels")
+    private Hotels hotels;
     @Column(name = "checkin", nullable = false)
     private LocalDate checkin;
     @Column(name = "checkout", nullable = false)
@@ -34,7 +34,7 @@ public class Paquete {
     public Paquete() {
     }
 
-    public Paquete(int idPaquete, float precio, Place place, Viaje viaje, float ahorro, String tipoHabitacion, int cantidadNoches, Hotel hotel, LocalDate checkin, LocalDate checkout) {
+    public Paquete(int idPaquete, float precio, Place place, Viaje viaje, float ahorro, String tipoHabitacion, int cantidadNoches, Hotels hotels, LocalDate checkin, LocalDate checkout) {
         this.idPaquete = idPaquete;
         this.precio = precio;
         this.place = place;
@@ -42,7 +42,7 @@ public class Paquete {
         this.ahorro = ahorro;
         this.tipoHabitacion = tipoHabitacion;
         this.cantidadNoches = cantidadNoches;
-        this.hotel = hotel;
+        this.hotels = hotels;
         this.checkin = checkin;
         this.checkout = checkout;
     }
@@ -103,12 +103,12 @@ public class Paquete {
         this.cantidadNoches = cantidadNoches;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotels(Hotels hotels) {
+        this.hotels = hotels;
     }
 
     public LocalDate getCheckin() {

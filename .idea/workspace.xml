@@ -6,6 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/HotelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/HotelsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/ComentariosHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/ComentariosHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Hotels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/IHotelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/IHotelsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IHotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IHotelsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/HotelServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/HotelsServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/ComentariosHotelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/InteresesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/NotificacionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/dtos/UsuarioDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/entities/Usuarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/repositories/IComentariosHotelRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IComentariosHotelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IInteresesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/INotificacionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/ComentariosHotelServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/InteresesServiceImplement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +51,34 @@
     </option>
   </component>
   <component name="ProjectId" id="2QGIAANGG2MP85AUwwkmMVD3tDY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/UNIVERSIDAD/5TO CICLO/ARQUI WEB/semana11/demoAuthor_CORS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;af0957de628e7d3a723c29e189568604&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/USER/OneDrive/UNIVERSIDAD/5TO CICLO/ARQUI WEB/EasyTravelBackend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "af0957de628e7d3a723c29e189568604",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pe.edu.upc.easytravelapi.servicesimplement" />
@@ -92,6 +113,13 @@
       <workItem from="1685424175916" duration="98000" />
       <workItem from="1686107316883" duration="635000" />
       <workItem from="1686157653918" duration="28000" />
+      <workItem from="1686522327386" duration="4128000" />
+      <workItem from="1686702112934" duration="1270000" />
+      <workItem from="1686709601188" duration="584000" />
+      <workItem from="1686717799700" duration="609000" />
+      <workItem from="1686779235283" duration="3673000" />
+      <workItem from="1686858223554" duration="753000" />
+      <workItem from="1686878451423" duration="1291000" />
     </task>
     <servers />
   </component>

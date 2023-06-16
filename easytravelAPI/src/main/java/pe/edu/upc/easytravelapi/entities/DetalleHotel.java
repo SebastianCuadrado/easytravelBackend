@@ -16,7 +16,7 @@ private int cantidadNoches;
 
     @ManyToOne
     @JoinColumn(name = "idHotels")
-    private Hotel hotel;
+    private Hotels hotels;
 
     @Column(name = "checkin", nullable = false)
     private LocalDate checkin;
@@ -26,11 +26,11 @@ private int cantidadNoches;
     public DetalleHotel() {
     }
 
-    public DetalleHotel(int idDetalle, String tipoHabitacion, int cantidadNoches, Hotel hotel, LocalDate checkin, LocalDate checkout) {
+    public DetalleHotel(int idDetalle, String tipoHabitacion, int cantidadNoches, Hotels hotels, LocalDate checkin, LocalDate checkout) {
         this.idDetalle = idDetalle;
         this.tipoHabitacion = tipoHabitacion;
         this.cantidadNoches = cantidadNoches;
-        this.hotel = hotel;
+        this.hotels= hotels;
         this.checkin = checkin;
         this.checkout = checkout;
     }
@@ -59,12 +59,12 @@ private int cantidadNoches;
         this.cantidadNoches = cantidadNoches;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotel(Hotels hotels) {
+        this.hotels = hotels;
     }
 
     public LocalDate getCheckin() {

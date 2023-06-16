@@ -14,17 +14,17 @@ public class Servicios {
     private String descripcion;
 
     @ManyToOne
-    @JoinColumn(name = "idHotels")
-    private Hotel hotel;
+    @JoinColumn(name = "idHotels",nullable = false)
+    private Hotels hotels;
 
     public Servicios() {
     }
 
-    public Servicios(int idServicio, String nombre, String descripcion, Hotel hotel) {
+    public Servicios(int idServicio, String nombre, String descripcion, Hotels hotels) {
         this.idServicio = idServicio;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.hotel = hotel;
+        this.hotels = hotels;
     }
 
     public int getIdServicio() {
@@ -51,11 +51,11 @@ public class Servicios {
         this.descripcion = descripcion;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotel(Hotels hotels) {
+        this.hotels = hotels;
     }
 }

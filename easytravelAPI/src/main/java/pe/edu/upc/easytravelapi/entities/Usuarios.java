@@ -1,6 +1,7 @@
 package pe.edu.upc.easytravelapi.entities;
 
 import javax.persistence.*;
+import java.net.PasswordAuthentication;
 import java.time.LocalDate;
 
 @Entity
@@ -21,11 +22,15 @@ public class Usuarios {
     private String celular;
     @Column(name="ubicacion", length = 30, nullable = false)
     private String ubicacion;
+    @Column(name="username", length = 30, nullable = false)
+    private String username;
+    @Column(name="password", length = 30, nullable = false)
+    private String password;
 
     public Usuarios() {
     }
 
-    public Usuarios(int id, String nombre, String apellidos, String email, LocalDate fechaNacimiento, String celular, String ubicacion) {
+    public Usuarios(int id, String nombre, String apellidos, String email, LocalDate fechaNacimiento, String celular, String ubicacion, String username, String password) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -33,6 +38,8 @@ public class Usuarios {
         this.fechaNacimiento = fechaNacimiento;
         this.celular = celular;
         this.ubicacion = ubicacion;
+        this.username = username;
+        this.password = password;
     }
 
     public int getId() {
@@ -89,6 +96,22 @@ public class Usuarios {
 
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
 

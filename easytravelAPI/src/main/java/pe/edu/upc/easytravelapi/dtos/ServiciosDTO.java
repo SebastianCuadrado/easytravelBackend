@@ -1,6 +1,6 @@
 package pe.edu.upc.easytravelapi.dtos;
 
-import pe.edu.upc.easytravelapi.entities.Hotel;
+import pe.edu.upc.easytravelapi.entities.Hotels;
 
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
@@ -13,6 +13,7 @@ public class ServiciosDTO {
     private String nombre;
 
     private String descripcion;
+    private Hotels hotels;
 
     public int getIdServicio() {
         return idServicio;
@@ -36,5 +37,13 @@ public class ServiciosDTO {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public Hotels getHotel() {
+        return hotels;
+    }
+
+    public void setHotel(Hotels hotel) {
+        this.hotels = hotels;
     }
 }

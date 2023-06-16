@@ -6,6 +6,8 @@ import pe.edu.upc.easytravelapi.entities.DetalleHotel;
 import pe.edu.upc.easytravelapi.repositories.IDetalleHotelRepository;
 import pe.edu.upc.easytravelapi.services.IDetalleHotelService;
 
+import java.util.List;
+
 @Service
 public class DetalleHotelServiceImplement implements IDetalleHotelService {
 
@@ -14,6 +16,16 @@ public class DetalleHotelServiceImplement implements IDetalleHotelService {
     @Override
     public void insertar(DetalleHotel detalleHotel) {
         dhR.save(detalleHotel);
+    }
+
+    @Override
+    public List<DetalleHotel> list() {
+        return dhR.findAll();
+    }
+
+    @Override
+    public DetalleHotel listId(int idDetalle) {
+        return dhR.findById(idDetalle).orElse(new DetalleHotel());
     }
 
     @Override
