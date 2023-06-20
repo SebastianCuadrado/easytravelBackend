@@ -39,11 +39,11 @@ public class ServiciosDTO {
         this.descripcion = descripcion;
     }
 
-    public Hotels getHotel() {
+    public Hotels getHotels() {
         return hotels;
     }
 
-    public void setHotel(Hotels hotel) {
+    public void setHotels(Hotels hotels) {
         this.hotels = hotels;
     }
 }

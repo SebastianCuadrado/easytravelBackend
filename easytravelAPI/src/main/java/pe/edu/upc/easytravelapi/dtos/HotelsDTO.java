@@ -1,13 +1,17 @@
 package pe.edu.upc.easytravelapi.dtos;
 
+import java.util.List;
+
 public class HotelsDTO {
 
     private int idHotels;
     private String nombre;
+    private String descripcion;
     private String precio_noche;
     private String ciudad;
     private String valoracion_promedio;
     private int estrellas;
+
 
     public int getIdHotels() {
         return idHotels;
@@ -17,12 +21,19 @@ public class HotelsDTO {
         this.idHotels = idHotels;
     }
 
-    public String getNombre() {
+    public String getDescripcion() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setDescripcion(String nombre) {
         this.nombre = nombre;
+    }
+    public String getNombre() {
+        return descripcion;
+    }
+
+    public void setNombre(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public String getPrecio_noche() {
@@ -56,4 +67,6 @@ public class HotelsDTO {
     public void setEstrellas(int estrellas) {
         this.estrellas = estrellas;
     }
+
+
 }

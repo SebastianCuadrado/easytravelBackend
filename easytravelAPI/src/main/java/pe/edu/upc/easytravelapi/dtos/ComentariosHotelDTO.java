@@ -44,11 +44,11 @@ public class ComentariosHotelDTO {
         this.comentario = comentario;
     }
 
-    public Hotels getHotels() {
+    public Hotels getHotel() {
         return hotels;
     }
 
-    public void setHotel(Hotels hotel) {
+    public void setHotel(Hotels hotels) {
         this.hotels = hotels;
     }
 
