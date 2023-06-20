@@ -2,6 +2,7 @@ package pe.edu.upc.easytravelapi.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.EmpresaTransporteDTO;
 import pe.edu.upc.easytravelapi.entities.EmpresaTransporte;
@@ -16,6 +17,7 @@ public class EmpresaTransporteController {
     @Autowired
     private IEmpresaTransporteService etS;
     @PostMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void insert(@RequestBody EmpresaTransporteDTO dto) {
         ModelMapper m = new ModelMapper();
         EmpresaTransporte et = m.map(dto, EmpresaTransporte.class);

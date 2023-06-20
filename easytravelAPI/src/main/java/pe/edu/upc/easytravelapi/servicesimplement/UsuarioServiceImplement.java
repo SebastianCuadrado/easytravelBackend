@@ -14,8 +14,12 @@ public class UsuarioServiceImplement implements IUsuarioService {
     private IUsuarioRepository uR;
 
     @Override
-    public void insert(Usuarios usuarios) {
-        uR.save(usuarios);
+    public Integer insert(Usuarios usuarios) {
+        int rpta = uR.buscarUsername(usuarios.getUsername());
+        if (rpta == 0) {
+            uR.save(usuarios);
+        }
+        return rpta;
     }
 
     @Override
