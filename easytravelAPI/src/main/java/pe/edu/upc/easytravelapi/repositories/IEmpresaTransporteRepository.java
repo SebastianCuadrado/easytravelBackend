@@ -6,4 +6,5 @@ import pe.edu.upc.easytravelapi.entities.EmpresaTransporte;
 
 @Repository
 public interface IEmpresaTransporteRepository extends JpaRepository<EmpresaTransporte, Integer> {
+
 }

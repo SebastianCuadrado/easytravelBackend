@@ -55,11 +55,11 @@ public class ComentariosHotel {
         this.comentario = comentario;
     }
 
-    public Hotels getHotels() {
+    public Hotels getHotel() {
         return hotels;
     }
 
-    public void setHotels(Hotels hotels) {
+    public void setHotel(Hotels hotels) {
         this.hotels = hotels;
     }
 
