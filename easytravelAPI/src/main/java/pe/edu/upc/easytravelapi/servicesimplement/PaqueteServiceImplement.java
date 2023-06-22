@@ -28,5 +28,15 @@ public class PaqueteServiceImplement implements IPaqueteService {
         return ipR.findPaqueteByPrecioGreaterThan(precio);
     }
 
+    @Override
+    public void delete(int idPaquete) {
+        ipR.deleteById(idPaquete);
+    }
+
+    @Override
+    public Paquete listId(int idPaquete) {
+        return ipR.findById(idPaquete).orElse(new Paquete());
+    }
+
 
 }

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import pe.edu.upc.easytravelapi.dtos.ComentariosHotelDTO;
 import pe.edu.upc.easytravelapi.dtos.DetalleHotelDTO;
 import pe.edu.upc.easytravelapi.dtos.ServiciosDTO;
 import pe.edu.upc.easytravelapi.dtos.UsuarioDTO;
@@ -51,6 +52,15 @@ public class ServiciosController {
         ModelMapper m = new ModelMapper();
         DetalleHotelDTO dto = m.map(sS.listId(id), DetalleHotelDTO.class);
         return dto;
+    }
+    @GetMapping("/hotels/{idHotels}")
+    public List<ServiciosDTO> findByHotelId(@PathVariable("idHotels") Integer idHotels) {
+        return sS.findByHotelsIdHotels(idHotels).stream()
+                .map(x -> {
+                    ModelMapper m = new ModelMapper();
+                    return m.map(x, ServiciosDTO.class);
+                })
+                .collect(Collectors.toList());
     }
 
 }
