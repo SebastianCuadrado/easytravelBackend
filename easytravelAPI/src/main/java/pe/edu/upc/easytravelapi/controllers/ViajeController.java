@@ -4,9 +4,12 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.ViajeDTO;
+import pe.edu.upc.easytravelapi.dtos.ViajeEmpresaTransporteDTO;
+import pe.edu.upc.easytravelapi.dtos.ViajeMesDTO;
 import pe.edu.upc.easytravelapi.entities.Viaje;
 import pe.edu.upc.easytravelapi.services.IViajeService;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -48,5 +51,17 @@ public class ViajeController {
         ModelMapper m = new ModelMapper();
         Viaje v = m.map(dto, Viaje.class);
         vS.insert(v);
+    }
+
+    @GetMapping("/count")
+    public List<ViajeEmpresaTransporteDTO> getViajeCountByEmpresa() {
+        List<ViajeEmpresaTransporteDTO> empresaTransporteViajeDTOS = vS.reporte01();
+        return empresaTransporteViajeDTOS;
+    }
+
+    @GetMapping("/count-month/{month}")
+    public List<ViajeMesDTO> getViajeCountByMonth(@PathVariable("month") Integer month) {
+        List<ViajeMesDTO> viajeMesDTOS = vS.reporte02(month);
+        return viajeMesDTOS;
     }
 }

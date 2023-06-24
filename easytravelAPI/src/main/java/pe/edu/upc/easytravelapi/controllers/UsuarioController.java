@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-@Secured({"ROLE_ADMIN"})
 @RequestMapping("/usuarios")
 public class UsuarioController {
     @Autowired
