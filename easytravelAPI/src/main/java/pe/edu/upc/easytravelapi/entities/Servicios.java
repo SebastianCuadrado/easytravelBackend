@@ -55,7 +55,7 @@ public class Servicios {
         return hotels;
     }
 
-    public void setHotel(Hotels hotels) {
+    public void setHotels(Hotels hotels) {
         this.hotels = hotels;
     }
 }

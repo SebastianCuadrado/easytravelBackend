@@ -32,4 +32,9 @@ public class ServiciosServiceImplement implements IServiciosService {
     public Servicios listId(int idServicio) {
         return sR.findById(idServicio).orElse(new Servicios());
     }
+
+    @Override
+    public List<Servicios> findByHotelsIdHotels(int hotelId) {
+        return sR.findByHotelsIdHotels(hotelId);
+    }
 }
