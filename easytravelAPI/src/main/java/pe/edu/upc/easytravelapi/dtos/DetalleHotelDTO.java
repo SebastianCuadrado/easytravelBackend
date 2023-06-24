@@ -1,6 +1,6 @@
 package pe.edu.upc.easytravelapi.dtos;
 
-import pe.edu.upc.easytravelapi.entities.Hotel;
+import pe.edu.upc.easytravelapi.entities.Hotels;
 
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
@@ -15,7 +15,7 @@ public class DetalleHotelDTO {
     private int cantidadNoches;
 
 
-    private Hotel hotel;
+    private Hotels hotels;
 
 
     private LocalDate checkin;
@@ -46,12 +46,12 @@ public class DetalleHotelDTO {
         this.cantidadNoches = cantidadNoches;
     }
 
-    public Hotel getHotel() {
-        return hotel;
+    public Hotels getHotels() {
+        return hotels;
     }
 
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
+    public void setHotels(Hotels hotel) {
+        this.hotels = hotels;
     }
 
     public LocalDate getCheckin() {

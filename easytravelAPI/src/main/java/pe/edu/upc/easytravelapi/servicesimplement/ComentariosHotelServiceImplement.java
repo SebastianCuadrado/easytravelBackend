@@ -28,4 +28,8 @@ public class ComentariosHotelServiceImplement implements IComentariosHotelServic
         chR.deleteById(idComentariosHotel);
 
     }
+    @Override
+    public List<ComentariosHotel> findByHotelsIdHotels(int hotelId) {
+        return chR.findByHotelsIdHotels(hotelId);
+    }
 }

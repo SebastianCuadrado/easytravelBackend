@@ -1,21 +1,31 @@
 package pe.edu.upc.easytravelapi.dtos;
 
+import pe.edu.upc.easytravelapi.entities.Role;
+
+import javax.persistence.Column;
 import java.time.LocalDate;
+import java.util.List;
 
 public class UsuarioDTO {
-    private int id;
+    private Long id;
     private String nombre;
     private String apellidos;
     private String email;
     private LocalDate fechaNacimiento;
     private String celular;
     private String ubicacion;
+    private String username;
+    private String password;
 
-    public int getId() {
+    private Boolean enabled;
+
+    private List<Role> roles;
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -65,5 +75,37 @@ public class UsuarioDTO {
 
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }

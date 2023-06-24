@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0196295e-92e6-471f-8619-807ad130a942" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/InteresesUsuarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/NotificacionUsuarioDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/ServiciosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/ServiciosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Servicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/DetalleHotelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/ServiciosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/controllers/ServiciosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/dtos/ServiciosDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/services/IDetalleHotelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/target/classes/pe/edu/upc/easytravelapi/servicesimplement/DetalleHotelServiceImplement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/easytravelAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/EasytravelApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/EasytravelApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/InteresesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/InteresesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/NotificacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/controllers/NotificacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/entities/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/IInteresesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/IInteresesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/INotificacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/repositories/INotificacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IInteresesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/IInteresesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/INotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/services/INotificacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/InteresesServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/InteresesServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/java/pe/edu/upc/easytravelapi/servicesimplement/NotificacionServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/easytravelAPI/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/UNIVERSIDAD/5TO CICLO/ARQUI WEB/semana11/demoAuthor_CORS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/carlo/Documents/GitHub/easytravelBackend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,12 +110,32 @@
       <workItem from="1686107316883" duration="635000" />
       <workItem from="1686157653918" duration="28000" />
       <workItem from="1686522327386" duration="4128000" />
-      <workItem from="1686689461373" duration="6166000" />
-      <workItem from="1686701650222" duration="4158000" />
+      <workItem from="1686702112934" duration="1270000" />
+      <workItem from="1686709601188" duration="584000" />
+      <workItem from="1686717799700" duration="609000" />
+      <workItem from="1686779235283" duration="3673000" />
+      <workItem from="1686858223554" duration="753000" />
+      <workItem from="1686878451423" duration="1291000" />
+      <workItem from="1687274993783" duration="38000" />
+      <workItem from="1687395990732" duration="5588000" />
+      <workItem from="1687405827996" duration="48000" />
+      <workItem from="1687472149427" duration="686000" />
+      <workItem from="1687591773458" duration="3302000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -16,16 +16,19 @@ public class EmpresaTransporte {
     private String direccion;
     @Column(name = "contacto", length = 50, nullable = false)
     private String contacto;
+    @Column(name = "logo", length = 250)
+    private String logo;
 
     public EmpresaTransporte() {
     }
 
-    public EmpresaTransporte(int idEmpresa, String nombre, String ruc, String direccion, String contacto) {
+    public EmpresaTransporte(int idEmpresa, String nombre, String ruc, String direccion, String contacto, String logo) {
         this.idEmpresa = idEmpresa;
         this.nombre = nombre;
         this.ruc = ruc;
         this.direccion = direccion;
         this.contacto = contacto;
+        this.logo = logo;
     }
 
     public int getIdEmpresa() {
@@ -66,5 +69,13 @@ public class EmpresaTransporte {
 
     public void setContacto(String contacto) {
         this.contacto = contacto;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
     }
 }
