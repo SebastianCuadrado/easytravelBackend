@@ -14,4 +14,8 @@ public interface IServiciosRepository extends JpaRepository<Servicios,Integer> {
     @Query("SELECT s FROM Servicios s WHERE s.hotels.idHotels = :hotelId")
     List<Servicios> findByHotelsIdHotels(@Param("hotelId") int hotelId);
 
+    @Query(value = "SELECT h.nombre,count(s.id_servicio) as Cant_Servicios from servicios s \n" +
+            "join hotels h on  s.id_hotels = h.id_hotels \n" +
+            "group by h.nombre order by Cant_Servicios DESC", nativeQuery = true)
+    List<String[]> getCountServiciosByHotel();
 }

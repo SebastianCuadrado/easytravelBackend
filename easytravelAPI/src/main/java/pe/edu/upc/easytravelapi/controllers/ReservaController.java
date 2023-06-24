@@ -3,6 +3,7 @@ package pe.edu.upc.easytravelapi.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pe.edu.upc.easytravelapi.dtos.HotelReservasDTO;
 import pe.edu.upc.easytravelapi.dtos.ReservaDTO;
 import pe.edu.upc.easytravelapi.entities.Reserva;
 import pe.edu.upc.easytravelapi.services.IReservaService;
@@ -34,5 +35,11 @@ public class ReservaController {
             ModelMapper m = new ModelMapper();
             return m.map(x, ReservaDTO.class);
         }).collect(Collectors.toList());
+    }
+
+    @GetMapping("/hotels-count")
+    public   List<HotelReservasDTO> getReservasCountByHotel(){
+        List<HotelReservasDTO> reservasDTOS=rS.reporteHotelesmasReservados();
+        return reservasDTOS;
     }
 }

@@ -1,5 +1,6 @@
 package pe.edu.upc.easytravelapi.services;
 
+import pe.edu.upc.easytravelapi.dtos.ServiciosHotelDTO;
 import pe.edu.upc.easytravelapi.entities.ComentariosHotel;
 import pe.edu.upc.easytravelapi.entities.Hotels;
 import pe.edu.upc.easytravelapi.entities.Servicios;
@@ -15,4 +16,5 @@ List<Servicios>listar();
 
     List<Servicios> findByHotelsIdHotels(int hotelId);
 
+       public List<ServiciosHotelDTO> reporteHotelesconmasServicios();
 }
