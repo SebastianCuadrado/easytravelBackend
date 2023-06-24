@@ -3,7 +3,9 @@ package pe.edu.upc.easytravelapi.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pe.edu.upc.easytravelapi.dtos.InteresesUsuarioDTO;
 import pe.edu.upc.easytravelapi.dtos.NotificacionDTO;
+import pe.edu.upc.easytravelapi.dtos.NotificacionUsuarioDTO;
 import pe.edu.upc.easytravelapi.dtos.UsuarioDTO;
 import pe.edu.upc.easytravelapi.entities.Notificacion;
 import pe.edu.upc.easytravelapi.entities.Usuarios;
@@ -59,5 +61,11 @@ public class NotificacionController {
         ModelMapper m = new ModelMapper();
         Notificacion n = m.map(dto, Notificacion.class);
         nS.insertar(n);
+    }
+
+    @GetMapping("/notificaciones-count")
+    public List<NotificacionUsuarioDTO> getBookCountByAuthor() {
+        List<NotificacionUsuarioDTO> NotificacionesUsuariosDTOs = nS.reporte02();
+        return NotificacionesUsuariosDTOs;
     }
 }

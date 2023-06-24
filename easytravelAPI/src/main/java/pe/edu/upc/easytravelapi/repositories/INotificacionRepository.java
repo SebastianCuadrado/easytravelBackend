@@ -12,4 +12,10 @@ import java.util.List;
 public interface INotificacionRepository extends JpaRepository<Notificacion, Integer> {
     @Query("from Notificacion n where n.intereses.idInteres =:id")
     List<Notificacion> findInteresID(@Param("id")Integer id);
+
+    @Query(value = "SELECT u.nombre, count(n.id_notificacion) from notificacion n \n" +
+            "join intereses i on n.id_interes = i.id_interes \n" +
+            "join usuarios u on  i.id = u.id \n" +
+            "group by u.nombre ORDER BY COUNT(n.id_notificacion) DESC", nativeQuery = true)
+    List<String[]> getCountNotificacionByUsuario();
 }
