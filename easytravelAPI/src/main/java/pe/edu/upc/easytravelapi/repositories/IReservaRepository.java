@@ -11,4 +11,10 @@ import java.util.List;
 public interface IReservaRepository extends JpaRepository<Reserva, Integer> {
     @Query("from Reserva r where r.usuario.id =:id")
     List<Reserva> findReservaByUserID(@Param("id")Integer id);
+
+    @Query(value="SELECT h.nombre, count(r.id_reserva) as Reservaciones \n" +
+            "from reservas r join paquetes p on r.id_paquete=p.id_paquete \n " +
+            "join  hotels h on p.id_hotels=h.id_hotels \n " +
+            "GROUP BY h.nombre order by Reservaciones DESC LIMIT 5",nativeQuery = true)
+    List<String[]> getCountReservacionesByHotel();
 }
