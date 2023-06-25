@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.PlaceDTO;
+import pe.edu.upc.easytravelapi.dtos.PlacePaqueteReservaDTO;
 import pe.edu.upc.easytravelapi.entities.Place;
 import pe.edu.upc.easytravelapi.services.IPlaceService;
 
@@ -45,5 +46,10 @@ public class PlaceController {
         ModelMapper m = new ModelMapper();
         Place p = m.map(dto, Place.class);
         pS.insert(p);
+    }
+    @GetMapping("/busqueda")
+    public List<PlacePaqueteReservaDTO> getQuantityofPlaces(){
+        List<PlacePaqueteReservaDTO> PlacePaqueteReservaDTOs = pS.getQuantityofPlaces();
+        return PlacePaqueteReservaDTOs;
     }
 }
