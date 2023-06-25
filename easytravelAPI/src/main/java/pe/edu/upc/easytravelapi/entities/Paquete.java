@@ -9,6 +9,9 @@ public class Paquete {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private int idPaquete;
+
+    @Column(name = "nombre",length =40)
+    private String nombre;
     @Column(name ="precio", nullable = false )
     private float precio;
     @ManyToOne
@@ -34,8 +37,9 @@ public class Paquete {
     public Paquete() {
     }
 
-    public Paquete(int idPaquete, float precio, Place place, Viaje viaje, float ahorro, String tipoHabitacion, int cantidadNoches, Hotels hotels, LocalDate checkin, LocalDate checkout) {
+    public Paquete(int idPaquete,String nombre, float precio, Place place, Viaje viaje, float ahorro, String tipoHabitacion, int cantidadNoches, Hotels hotels, LocalDate checkin, LocalDate checkout) {
         this.idPaquete = idPaquete;
+        this.nombre=nombre;
         this.precio = precio;
         this.place = place;
         this.viaje = viaje;
@@ -53,6 +57,13 @@ public class Paquete {
 
     public void setIdPaquete(int idPaquete) {
         this.idPaquete = idPaquete;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public float getPrecio() {
