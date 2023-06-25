@@ -1,5 +1,6 @@
 package pe.edu.upc.easytravelapi.services;
 
+import pe.edu.upc.easytravelapi.dtos.InteresesUsuarioDTO;
 import pe.edu.upc.easytravelapi.entities.Intereses;
 
 import java.util.List;
@@ -10,4 +11,4 @@ public interface IInteresesService {
     List<Intereses> BuscarInteresPorIDUsuario(Integer id);
     public void delete(int id);
     public Intereses listId(int id);
-}
+    public List<InteresesUsuarioDTO> reporte01();}

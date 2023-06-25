@@ -13,4 +13,9 @@ import java.util.List;
 public interface IInteresesRepository extends JpaRepository<Intereses, Integer> {
     @Query("from Intereses i where i.usuarios.id =:id")
     List<Intereses> findInteresByUserID(@Param("id")Integer id);
+
+    @Query(value = "SELECT u.nombre,count(i.id_interes) from intereses i \n" +
+            "join usuarios u on  i.id = u.id \n" +
+            "group by u.nombre ORDER BY COUNT(i.id_interes) DESC", nativeQuery = true)
+    List<String[]> getCountInteresesByUsuario();
 }
