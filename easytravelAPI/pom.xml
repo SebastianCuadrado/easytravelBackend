@@ -11,7 +11,7 @@
 	<groupId>pe.edu.upc</groupId>
 	<artifactId>easytravelAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>easytravelAPI</name>
 	<description>easytravelAPI</description>
 	<properties>
