@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.PaqueteDTO;
+import pe.edu.upc.easytravelapi.dtos.PaqueteHotelPlaceDTO;
 import pe.edu.upc.easytravelapi.entities.Paquete;
 import pe.edu.upc.easytravelapi.services.IPaqueteService;
 
@@ -46,5 +47,10 @@ public class PaqueteController {
         ModelMapper m = new ModelMapper();
         Paquete p = m.map(dto, Paquete.class);
         pS.insert(p);
+    }
+    @GetMapping("/busqueda")
+    public List<PaqueteHotelPlaceDTO> getPaquetesByHotelsAndPlace(){
+        List<PaqueteHotelPlaceDTO> PaqueteHotelPlaceDTOs = pS.getPaquetesByHotelsAndPlace();
+        return PaqueteHotelPlaceDTOs;
     }
 }
