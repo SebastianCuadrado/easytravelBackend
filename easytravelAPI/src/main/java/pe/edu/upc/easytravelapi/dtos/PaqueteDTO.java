@@ -14,6 +14,7 @@ import java.time.LocalDate;
 
 public class PaqueteDTO {
     private int idPaquete;
+    private String nombre;
     private float precio;
     private Place place;
     private Viaje viaje;
@@ -30,6 +31,13 @@ public class PaqueteDTO {
 
     public void setIdPaquete(int idPaquete) {
         this.idPaquete = idPaquete;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public float getPrecio() {
