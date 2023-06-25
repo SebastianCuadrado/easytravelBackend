@@ -26,7 +26,7 @@ public class Usuarios implements Serializable {
     private String ubicacion;
     @Column(name="username", length = 30, nullable = false)
     private String username;
-    @Column(name="password", length = 200, nullable = false)
+    @Column(name="password", length = 80, nullable = false)
     private String password;
 
     private Boolean enabled;
