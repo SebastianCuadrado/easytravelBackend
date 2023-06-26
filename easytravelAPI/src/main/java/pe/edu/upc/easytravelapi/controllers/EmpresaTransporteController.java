@@ -32,6 +32,7 @@ public class EmpresaTransporteController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void delete(@PathVariable("id") Integer id) {
         etS.delete(id);
     }
@@ -44,6 +45,7 @@ public class EmpresaTransporteController {
     }
 
     @PutMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void goUpdate(@RequestBody EmpresaTransporteDTO dto) {
         ModelMapper m = new ModelMapper();
         EmpresaTransporte et = m.map(dto, EmpresaTransporte.class);

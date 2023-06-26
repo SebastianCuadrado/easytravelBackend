@@ -2,6 +2,7 @@ package pe.edu.upc.easytravelapi.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.PlaceDTO;
 import pe.edu.upc.easytravelapi.dtos.PlacePaqueteReservaDTO;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 public class PlaceController {
     @Autowired
     private IPlaceService pS;
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public void insert(@RequestBody PlaceDTO dto) {
         ModelMapper m = new ModelMapper();
@@ -29,6 +31,7 @@ public class PlaceController {
             return m.map(x, PlaceDTO.class);
         }).collect(Collectors.toList());
     }
+    @PreAuthorize("hasAuthority('ADMIN')")
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id) {
         pS.delete(id);
@@ -42,6 +45,7 @@ public class PlaceController {
     }
 
     @PutMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void goUpdate(@RequestBody PlaceDTO dto) {
         ModelMapper m = new ModelMapper();
         Place p = m.map(dto, Place.class);
