@@ -2,6 +2,7 @@ package pe.edu.upc.easytravelapi.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +20,9 @@ public class ServiciosController {
     @Autowired
     private IServiciosService sS;
 
+
     @PostMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void registrar (@RequestBody ServiciosDTO dto){
         ModelMapper m = new ModelMapper();
         Servicios s=m.map(dto, Servicios.class);

@@ -1,6 +1,7 @@
 package pe.edu.upc.easytravelapi.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.easytravelapi.dtos.HotelsDTO;
 import pe.edu.upc.easytravelapi.entities.Hotels;
@@ -16,6 +17,7 @@ public class HotelsController {
     private IHotelsService hS;
 
     @PostMapping
+    @PreAuthorize("hasAuthority('USER')")
     public void insert(@RequestBody HotelsDTO dto){
         ModelMapper m = new ModelMapper();
         Hotels h=m.map(dto, Hotels.class);
@@ -31,6 +33,7 @@ public class HotelsController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void delete(@PathVariable("id")Integer id){
 hS.delete(id);
     }
@@ -43,6 +46,7 @@ hS.delete(id);
     }
 
     @PutMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void goUpdate(@RequestBody HotelsDTO dto){
         ModelMapper m = new ModelMapper();
         Hotels h=m.map(dto, Hotels.class);
